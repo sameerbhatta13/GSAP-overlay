@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Quantico';
+    src: url('../fonts/Quantico-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quantico', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.234);
+}
+
+
+#page1,
+#page2,
+#page3 {
+    height: 100vh;
+    width: 100%;
+    padding: 5vw 0;
+}
+
+#move {
+    background-color: lawngreen;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+
+}
+
+.marque {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    /* border: 1px solid black; */
+    /* width: max-content */
+    /* animation: move 10s linear infinite; */
+}
+
+.track {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    /* width: max-content; */
+    gap: 10px;
+}
+
+.marque h1 {
+    font-size: 4vh;
+    font-family: 'Quantico';
+}
+
+#move .marque img {
+    height: 4vh;
+}
